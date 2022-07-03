@@ -10,7 +10,8 @@ import org.aeonbits.owner.Config;
 public interface BrowserStackConfig extends Config {
     String username();
 
-    String access_key();
+    @Key("access_key")
+    String accessKey();
 
     String project();
 
